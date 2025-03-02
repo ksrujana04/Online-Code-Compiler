@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Online IDE</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+select, input[type="radio"] {
+    margin: 10px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+center {
+    padding-top: 50px;
+}
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Online IDE</h1>
+        <form id="myform" name="myform" method="post" action="compilecode">
+            <h3>Code</h3>
+            <textarea rows="13" cols="100" id="code" name="code"></textarea>
+            <br />
+            <h3>Input</h3>
+            <textarea rows="10" cols="100" id="input" name="input"></textarea>
+            <br />
+            Language :
+            <select name="lang">
+                <option value="C">C</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+            </select>
+            Compile With Input :
+            <input type="radio" name="inputRadio" id="inputRadio" value="true" />yes
+            <input type="radio" name="inputRadio" id="inputRadio" value="false" />No
+            <br />
+            <input type="submit" value="Submit" name="submit" />
+        </form>
+    </center>
+</body>
+
+</html>
